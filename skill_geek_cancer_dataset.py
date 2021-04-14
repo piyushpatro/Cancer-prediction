@@ -197,10 +197,6 @@ C1=np.array(C1)
 centroid_0=(np.max(C0, axis=0)+np.min(C0, axis=0)/2)
 centroid_1=(np.max(C1, axis=0)+np.min(C1, axis=0)/2)
 
-D
-
-centroid_2
-
 a=np.array(y)
 np.unique(a, return_counts=True)
 
@@ -262,4 +258,4 @@ class KMeans():
 
 kmeans=KMeans(K=2, max_iters=100)
 
-davies_bouldin_score(X, kmeans.predict(X))
+print(davies_bouldin_score(X, kmeans.predict(X)))
